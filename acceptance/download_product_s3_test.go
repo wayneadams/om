@@ -57,7 +57,7 @@ var _ = Describe("download-product command", func() {
 					"--s3-access-key-id", "minio",
 					"--s3-secret-access-key", "password",
 					"--s3-region-name", "unknown",
-					"--s3-endpoint", "http://127.0.0.1:9001",
+					"--s3-endpoint", "http://localhost:9001",
 					"--stemcell-iaas", "google",
 					"--s3-stemcell-path", "/another/stemcell",
 					"--s3-product-path", "/some/product",
@@ -96,7 +96,7 @@ var _ = Describe("download-product command", func() {
 					"--s3-access-key-id", "minio",
 					"--s3-secret-access-key", "password",
 					"--s3-region-name", "unknown",
-					"--s3-endpoint", "http://127.0.0.1:9001",
+					"--s3-endpoint", "http://localhost:9001",
 					"--stemcell-iaas", "google",
 					"--s3-stemcell-path", "/another/stemcell",
 					"--s3-product-path", "/some/product",
@@ -139,7 +139,7 @@ source: s3
 s3-access-key-id: minio
 s3-secret-access-key: password
 s3-region-name: unknown
-s3-endpoint: http://127.0.0.1:9001
+s3-endpoint: http://localhost:9001
 stemcell-iaas: google
 s3-stemcell-path: /another/stemcell
 s3-product-path: /some/product
@@ -171,7 +171,7 @@ stemcell-heavy: true`))
 					"--s3-access-key-id", "minio",
 					"--s3-secret-access-key", "password",
 					"--s3-region-name", "unknown",
-					"--s3-endpoint", "http://127.0.0.1:9001",
+					"--s3-endpoint", "http://localhost:9001",
 					"--s3-enable-v2-signing", "true",
 				)
 
@@ -197,7 +197,7 @@ stemcell-heavy: true`))
 					"--s3-access-key-id", "minio",
 					"--s3-secret-access-key", "password",
 					"--s3-region-name", "unknown",
-					"--s3-endpoint", "http://127.0.0.1:9001",
+					"--s3-endpoint", "http://localhost:9001",
 					"--s3-enable-v2-signing", "true",
 				)
 
@@ -221,7 +221,7 @@ stemcell-heavy: true`))
 					"--s3-access-key-id", "minio",
 					"--s3-secret-access-key", "password",
 					"--s3-region-name", "unknown",
-					"--s3-endpoint", "http://127.0.0.1:9001",
+					"--s3-endpoint", "http://localhost:9001",
 				)
 
 				session, err := gexec.Start(command, GinkgoWriter, GinkgoWriter)
@@ -246,7 +246,7 @@ stemcell-heavy: true`))
 					"--s3-access-key-id", "minio",
 					"--s3-secret-access-key", "password",
 					"--s3-region-name", "unknown",
-					"--s3-endpoint", "http://127.0.0.1:9001",
+					"--s3-endpoint", "http://localhost:9001",
 				)
 
 				session, err := gexec.Start(command, GinkgoWriter, GinkgoWriter)
@@ -277,7 +277,7 @@ stemcell-heavy: true`))
 					"--s3-access-key-id", "minio",
 					"--s3-secret-access-key", "password",
 					"--s3-region-name", "unknown",
-					"--s3-endpoint", "http://127.0.0.1:9001",
+					"--s3-endpoint", "http://localhost:9001",
 				)
 
 				session, err := gexec.Start(command, GinkgoWriter, GinkgoWriter)
@@ -306,7 +306,7 @@ stemcell-heavy: true`))
 					"--s3-access-key-id", "minio",
 					"--s3-secret-access-key", "password",
 					"--s3-region-name", "unknown",
-					"--s3-endpoint", "http://127.0.0.1:9001",
+					"--s3-endpoint", "http://localhost:9001",
 					"--s3-product-path", "/some-path",
 				)
 
@@ -344,7 +344,7 @@ stemcell-heavy: true`))
 					"--s3-access-key-id", "minio",
 					"--s3-secret-access-key", "password",
 					"--s3-region-name", "unknown",
-					"--s3-endpoint", "http://127.0.0.1:9001",
+					"--s3-endpoint", "http://localhost:9001",
 				)
 
 				session, err := gexec.Start(command, GinkgoWriter, GinkgoWriter)
@@ -373,7 +373,7 @@ stemcell-heavy: true`))
 					"--s3-access-key-id", "minio",
 					"--s3-secret-access-key", "password",
 					"--s3-region-name", "unknown",
-					"--s3-endpoint", "http://127.0.0.1:9001",
+					"--s3-endpoint", "http://localhost:9001",
 				)
 
 				session, err := gexec.Start(command, GinkgoWriter, GinkgoWriter)
